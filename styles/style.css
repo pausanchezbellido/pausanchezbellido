@@ -1,0 +1,235 @@
+html {
+    scroll-snap-type: y mandatory;
+    font-family: "Outfit", sans-serif;
+}
+
+.outfit-font{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.snap-page {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.titulo-seccion {
+  font-size: 3rem;
+  transform: translateY(20px);
+}
+
+.grid-ilustraciones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5vh 5%;
+  width: 100%; 
+  height: 100%;
+  max-height: 100vh;
+  box-sizing: border-box; 
+  overflow: visible;
+}
+
+.proyecto {
+  background: #fff;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.proyecto .info {
+  /* 1. Ocupar todo el espacio (anclando a las 4 esquinas) */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  /* 2. Centrar el texto (con Flexbox) */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  text-align: center;      /* Centra el texto si tiene varias líneas */
+
+  /* Tus estilos anteriores */
+  color: #000000;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 15px;
+
+  /* 3. (Importante) Asegura que el padding no rompa el layout */
+  box-sizing: border-box; 
+
+  font-size: x-large;
+}
+
+.proyecto:hover .info {
+  opacity: 1;
+  backdrop-filter: blur(6px);
+}
+
+.contenedor-inicio {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-inicio > .row-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 90%;
+    padding: 15px;
+}
+
+.contenedor-inicio > .row-2 {
+    height: 10%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nombre-autor {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+}
+
+.menu-inicio {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    border-radius: 15px;
+    border-color: black;
+    border-style: solid;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.enlace-menu {
+    text-decoration: none;
+    color: rgb(157, 110, 228);
+    margin: 5px;
+}
+
+.boton-menu {
+    text-decoration: none;
+    color: black;
+}
+
+.flecha-seguir {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
+
+#sobre-mi > .row-1 {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#sobre-mi > .row-2 {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sobre-mi > .row-1 > .row-1 {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+#sobre-mi > .row-1 > .row-2 {
+    height: 90%;
+}
+
+#sobre-mi > .row-1 > .row-1 > .titulo-seccion > h2 {
+    margin: 0;
+}
+
+.sobre-mi {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre-mi >  .foto-perfil {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre-mi > .texto-sobre-mi {
+  margin: 20px;
+  width: 40%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  font-size: x-large;
+}
+
+#sobre-mi {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+
+#digital {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+
+#digital > .titulo-seccion {
+    font-size: 6em;
+}
+
+#digital-2 {
+  padding: 4vh 4%;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagen-proyecto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.2);
+}
+

@@ -1,0 +1,30 @@
+{
+  "name": "pausanchezbellido",
+  "version": "1.0.0",
+  "description": "<!-- **pausanchezbellido/pausanchezbellido** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pausanchezbellido/pausanchezbellido.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pausanchezbellido/pausanchezbellido/issues"
+  },
+  "homepage": "https://github.com/pausanchezbellido/pausanchezbellido#readme",
+  "dependencies": {
+    "motion": "^12.23.24"
+  },
+  "devDependencies": {
+    "vite": "^7.1.12"
+  }
+  
+}
